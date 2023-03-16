@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    tools:context=".MainActivity">
+
+    <!-- Shows Team A and B -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Team A-->
+        <LinearLayout style="@style/TeamLayout">
+
+            <!-- Label - Team A TextView -->
+            <TextView
+                style="@style/TeamLabel"
+                android:text="@string/team_a" />
+
+            <!-- Team A Score TextView -->
+            <TextView
+                android:id="@id/team_a_score"
+                style="@style/TeamScore"
+                android:text="@string/score_default" />
+
+            <!-- Team A +3 Points Button -->
+            <Button
+                style="@style/BasicView"
+                android:onClick="addThreeForTeamA"
+                android:text="@string/button_three_points" />
+
+            <!-- Team A +2 Points Button -->
+            <Button
+                style="@style/BasicView"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:onClick="addTwoForTeamA"
+                android:text="@string/button_two_points" />
+
+            <!-- Team A Free Throw Button -->
+            <Button
+                style="@style/BasicView"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:onClick="addOneForTeamA"
+                android:text="@string/button_free_throw" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="@dimen/width_divider"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_default"
+            android:background="@color/color_divider" />
+
+        <!-- Team B-->
+        <LinearLayout style="@style/TeamLayout">
+
+            <!-- Label - Team A TextView -->
+            <TextView
+                style="@style/TeamLabel"
+                android:text="@string/team_b" />
+
+            <!-- Team B Score TextView -->
+            <TextView
+                android:id="@id/team_b_score"
+                style="@style/TeamScore"
+                android:text="@string/score_default" />
+
+            <!-- Team B +3 Points Button -->
+            <Button
+                style="@style/BasicView"
+                android:onClick="addThreeForTeamB"
+                android:text="@string/button_three_points" />
+
+            <!-- Team B +2 Points Button -->
+
+            <!-- Team B Free Throw Button -->
+            <Button
+                style="@style/BasicView"
+                android:layout_marginVertical="@dimen/margin_small"
+                android:onClick="addTwoForTeamB"
+                android:text="@string/button_two_points" />
+
+            <Button
+                style="@style/BasicView"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:onClick="addOneForTeamB"
+                android:text="@string/button_free_throw" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:onClick="resetScore"
+        android:text="@string/button_reset" />
+</RelativeLayout>

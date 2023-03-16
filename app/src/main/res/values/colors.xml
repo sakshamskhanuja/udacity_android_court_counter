@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_accent">@color/color_primary</color>
+    <color name="color_primary">#FF9800</color>
+    <color name="color_team_name">#616161</color>
+    <color name="color_score">@android:color/black</color>
+    <color name="color_background">#EEEEEE</color>
+    <color name="color_divider">@android:color/darker_gray</color>
+</resources>

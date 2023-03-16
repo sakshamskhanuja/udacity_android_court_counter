@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="LightTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <item name="colorButtonNormal">@color/color_primary</item>
+        <item name="titleTextColor">@color/color_score</item>
+    </style>
+
+    <!-- Team A and B -->
+    <style name="TeamLayout">
+        <item name="android:layout_width">@dimen/width_zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Basic View -->
+    <style name="BasicView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/margin_team</item>
+        <item name="android:layout_marginEnd">@dimen/margin_team</item>
+    </style>
+
+    <!-- Team Label -->
+    <style name="TeamLabel" parent="BasicView">
+        <item name="android:padding">@dimen/padding_default</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/team_name_size</item>
+        <item name="android:textColor">@color/color_team_name</item>
+    </style>
+
+    <!-- Team Score -->
+    <style name="TeamScore" parent="BasicView">
+        <item name="android:textColor">@color/color_score</item>
+        <item name="android:textSize">@dimen/score_size</item>
+        <item name="android:paddingBottom">@dimen/padding_large</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

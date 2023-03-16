@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Scoreboard -->
+    <item name="team_a_score" type="id" />
+    <item name="team_b_score" type="id" />
+</resources>
